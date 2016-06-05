@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<style>
+h1
+{font-size:50px;
+font-family: "Lucida Handwriting";
+width: 500px;
+ padding: 10px;
+    <!--border: 25px solid navy;-->
+    margin: 25px;
+background-color:rgb(0,204,255);
+border: 5px solid black;}
+.button
+{background-color: black; /* Green */
+   
+    padding :40px;
+    text-align: center;
+   border:2px solid black;
+    display: inline-block;
+margin: 10px 10px;}
+</style>
+<head>
+<title>
+About Me
+</title>
+</head>
+<body style="background-color:lightgray;" >
+<br>
+<center>
+<h1 id="main">
+ALL ABOUT ME!
+</h1>
+</center>
+<center>
+<button id="b1" class="button" onclick="b1func()" style="font-size:25px; font-family:Lucida Calligraphy; background-color:rgb(51,153,204);">
+<b>
+A Little History
+</b>
+</button>
+<img src="chennai.png" width="200" height="100" style="border:10px;">
+<br>
+<button id="b2" class="button" onclick="b2func()" style="font-size:25px; font-family:Comic Sans MS; background-color:rgb(51,204,255);">
+<b>
+Perky Hobbies
+</b>
+</button>
+<img src="books.jpg" width="200" height="100" style="border:10px;">
+<br>
+<button id="b3" class="button" onclick="b3func()" style="font-size:25px; font-family:Comic Sans MS; background-color:rgb(51,204,255);">
+<b>
+Passion
+</b>
+</button>
+<img src="program.jpg" width="200" height="100" style="border:10px;">
+<br>
+<button id="b4" class="button" onclick="b4func()" style="font-size:25px; font-family:Comic Sans MS; background-color:rgb(51,204,255);">
+<b>
+Ambition
+</b>
+</button>
+<img src="crypt.jpg" width="200" height="100" style="border:10px;">
+<br>
+<button id="b5" onclick="b5func()" style="font-size:25px; font-family:Comic Sans MS; background-color:rgb(51,204,255);">
+<b>
+Currently...?
+</b>
+</button>
+<img src="nitt.png" width="200" height="100" style="border:10px;">
+<br>
+<button id="b6" onclick="b6func()" style="font-size:25px; font-family:Comic Sans MS; background-color:rgb(51,204,255);">
+<b>
+Working on
+</b>
+</button>
+<br>
+</center>
+<script>
+var flag1=0,flag2=0,flag3=0,flag4=0;
+function b1func()
+{if(!flag1)
+     {flag1=1; document.getElementById("b1").innerHTML="Born:08/09/1997<br>Brought-up:Chennai<br>School:D.A.V";}
+else{flag1=0;
+document.getElementById("b1").innerHTML="A Brief History";}
+}
+function b2func()
+{if(!flag2)
+    {  document.getElementById("b2").innerHTML="Bookworm (strictly novels)<br>Music (only listening)<br> Watching movies<br> Die Hard sitcom fan<br>  Hardcore Foodie";
+flag2=1;}else{flag2=0;
+document.getElementById("b2").innerHTML="Perky Habits";}}
+
+function b3func()
+{if(!flag3)
+    {  document.getElementById("b3").innerHTML="Progamming";
+flag3=1;}else{flag3=0;
+document.getElementById("b3").innerHTML="Passion";}
+}
+function b4func()
+{if(!flag4)
+    {  document.getElementById("b4").innerHTML="Cryptographer";
+flag4=1;}else{flag4=0;
+document.getElementById("b4").innerHTML="Ambition";}
+}
+function b5func()
+{if(!flag5)
+    {  document.getElementById("b5").innerHTML="Studying at NITT";
+flag5=1;}else{flag5=0;
+document.getElementById("b5").innerHTML="Currently...?";}
+}
+function b6func()
+{if(flag6==0)
+    {  document.getElementById("b6").innerHTML="Countdown Timer<br>Memory Blocks<br>Bash Scripting";
+flag6=1;}else if(flag6==1){flag6=2;
+document.getElementById("b6").innerHTML="And Counting...";}
+else{flag6=0;document.getElementById("b6").innerHTML="Working on";}
+}
+</script>
+</body>
+</html>
